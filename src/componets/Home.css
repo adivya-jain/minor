@@ -1,0 +1,211 @@
+:root {
+    /* white-color:rgb(210, 221, 231); */
+}
+
+/* home left side */
+.Home {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 2;
+
+}
+
+.Home::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4285F4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* z-index: 3; */
+    clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+
+}
+
+.home-left {
+    display: grid;
+    grid-template-rows: 100px 70vh 100px;
+    color: black;
+    grid-column: 1/2;
+
+}
+
+.home-left-logo {
+    grid-row: 1/2;
+    z-index: 4;
+    margin-top: 5%;
+    margin-left: -65%;
+    font-weight: 500;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.home-left-moto {
+    grid-row: 2/3;
+    z-index: 4;
+    text-align: center;
+    color: aliceblue;
+    /* vertical-align: middle; */
+    margin-top: 30%;
+    font-weight: 600;
+    font-size: xx-large;
+    animation: moto 5s 1s infinite;
+}
+
+.home-left-social {
+    grid-row: 3/4;
+    z-index: 4;
+    margin-left: -20%;
+
+}
+
+.social-icon {
+    /* font-size: 40px; */
+    padding: 2%;
+}
+
+
+
+
+
+
+
+.home-right {
+    /* /* position: absolute; */
+    display: grid;
+    grid-column: 3/4;
+    color: black;
+    grid-template-rows: 100px 70vh 100px;
+    z-index: 5;
+
+}
+
+.home-right-form {
+    z-index: 4;
+    /* grid-row: 2/3; */
+}
+
+.whole-right {
+    grid-row: 2/3;
+    margin-right: 50%;
+    margin-top: 10%;
+}
+
+.form-upper-header {
+    margin-top: 10%;
+
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+
+
+.form-upper-subheader {
+    margin: 2%;
+    font-size: larger;
+    font-weight: 500;
+
+}
+
+.form-upper-buttons {
+    display: flex;
+    width: 350px;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    /* border: none; */
+}
+
+.form-upper-buttons-icontext {
+    display: flex;
+    align-items: center;
+}
+
+.form-upper-buttons button {
+    border: none;
+}
+
+
+.form-upper-buttons-text {
+    color: #858585;
+    margin-top: 2px;
+    margin-left: 5px;
+    /* text-align: center; */
+}
+
+.home-right-form {
+    margin-top: 5%;
+    /* margin-left: 3%; */
+}
+
+
+input {
+    width: 100%;
+    padding: 1.5%;
+    margin: 1%;
+}
+
+label{
+    left: 1px;
+    position: relative;
+}
+
+
+.form-lower {
+    /* grid-row:2/3; */
+    margin-top: 5%;
+    width: 100%;
+    padding-top: 5%;
+
+    /* display: grid; */
+}
+
+.signin-button {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px;
+}
+
+.form-lower-text {
+    padding-top: 5%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+
+
+a {
+    color: blue;
+    /* margin-top: 2%; */
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+
+
+
+
+
+@keyframes moto {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: antiquewhite;
+    }
+    100%
+    {
+        color: black;
+    }
+
+}
