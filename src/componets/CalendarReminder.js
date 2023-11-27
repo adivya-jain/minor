@@ -3,7 +3,7 @@ import React from 'react'
 const CalendarReminder = () => {
   return (
     <div>
-      Calendar
+      Calendar Reminder
     </div>
   )
 }
